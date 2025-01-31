@@ -24,8 +24,8 @@ selectSystem.addEventListener("change", function () {
 submitBtn.onclick = function (e) {
   e.preventDefault();
   let _24HoursSystem = 0,
-    minutes = 59,
-    seconds = 56;
+    minutes =0,
+    seconds =0;
   if (inputValue >= 1 && inputValue <= 12) {
     if (selectedValue == "PM") {
       if (inputValue == 12) {
