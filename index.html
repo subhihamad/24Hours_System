@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <form class="formTime">
+        <label>Enter Time</label>
+        <input
+          type="text"
+          placeholder="Enter time with 12 Hours system"
+          name="time"
+          id="hours-12"
+        />
+        <select id="slesctmod">
+          <option value="PM">PM</option>
+          <option value="AM">AM</option>
+        </select>
+        <div class="btn-group">
+          <button type="submit" class="btn" id="sub-btn">Submit</button>
+          <button type="reset" class="btn" id="res-btn">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <div class="message-box">
+        <h2>You Entered <span class="decision">right</span> time</h2>
+        <p class="time-message">
+          The time is <span class="hours"></span>:<span class="minute"></span
+          >:<span class="second"></span><span class="system"> </span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

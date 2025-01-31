@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.parent {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formTime {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 370px;
+  height: 190px;
+  background-color: #c2c5aa;
+  padding: 15px;
+  border-radius: 5px;
+}
+.formTime label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333d29;
+  font-weight: 700;
+}
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+select {
+  max-width: 150px;
+  margin-bottom: 15px;
+  padding: 2px;
+  font-size: 15px;
+  font-family: 700;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  margin-left: 30%;
+}
+.slesctmod:focus {
+  outline: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  width: 120px;
+  padding: 5px;
+  font-size: 15px;
+  display: block;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.message-box {
+  max-width: 475px;
+  height: 75px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff595e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -30%;
+  transition: 1s;
+}
+.message-box h2 {
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+}
+.time-message {
+  font-family: 700;
+  font-size: 18px;
+}
